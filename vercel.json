@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/comandos", "destination": "/index.html" },
+    { "source": "/comandos/:path*", "destination": "/:path*" }
+  ]
+}

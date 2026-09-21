@@ -6,7 +6,7 @@ const PRODUCT_NAME = "DELIVERY 1K";
 const PRODUCT_TOTAL = 1000;          // exibido como "1.000"
 const PRODUCT_PRICE = "27,90";
 const BUY_URL = "https://pay.kiwify.com.br/Uufg03i";
-const PDF_URL = "assets/100-comandos-de-delivery.pdf";
+const PDF_URL = "/comandos/assets/100-comandos-de-delivery.pdf";
 const INSTAGRAM_URL = "https://instagram.com/ia.thaynnara";
 const HERO_EXAMPLES = [
   "/acai-luzamarela-natural",
