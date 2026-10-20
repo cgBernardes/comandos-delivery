@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edite AI | Seu Reels editado pelo Claude ou ChatGPT</title>
+<meta name="description" content="O Edite AI transforma o Claude ou o ChatGPT no seu editor de vídeo. Grave, peça em português e receba o Reels com cortes, legenda, animação e som. R$ 47, pagamento único.">
+<meta name="theme-color" content="#07050F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Edite AI | Seu Reels editado numa conversa">
+<meta property="og:description" content="Grave no celular, peça em português e receba o Reels pronto. Funciona com Claude ou ChatGPT.">
+<meta property="og:image" content="https://www.aifoodstudio.com.br/comandos/assets/video-claude-poster.jpg">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1784785552529873');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1784785552529873&ev=PageView&noscript=1"/></noscript>
+<!-- Fim Meta Pixel -->
+<style>
+:root{
+  --bg:#07050F;--bg2:#0E0A1A;--card:#130D22;--card2:#1A1230;--line:#2A2140;
+  --fg:#F4F1FA;--muted:#A79FBD;--dim:#6E6688;
+  --accent:#7C3AED;--accent2:#A78BFA;--glow:rgba(124,58,237,.45);
+  --ok:#34D399;--no:#F87171;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --serif:"Instrument Serif",Georgia,serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img,video{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+.narrow{max-width:760px}
+section{padding-block:88px}
+.eyebrow{font:600 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--accent2)}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.02em}
+h1{font-size:clamp(42px,7.2vw,78px);line-height:.98;font-weight:800}
+h2{font-size:clamp(32px,5vw,52px);line-height:1.03;font-weight:800}
+h3{font-size:20px;font-weight:700;line-height:1.2}
+.it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--accent2)}
+.lead{font-size:clamp(17px,2vw,19px);color:var(--muted);max-width:56ch;margin:0}
+.lead strong{color:var(--fg);font-weight:600}
+.hl{color:var(--accent2)}
+.head{display:grid;gap:16px;margin-bottom:44px;max-width:740px}
+.center{text-align:center;margin-inline:auto;justify-items:center}
+p{margin:0}
+
+.btn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:var(--accent);color:#fff;text-decoration:none;font:700 17px/1 var(--body);letter-spacing:.02em;padding:20px 34px;border-radius:14px;box-shadow:0 0 0 1px rgba(255,255,255,.08) inset,0 10px 40px var(--glow);transition:transform .15s,background .2s;animation:pulse 2.8s ease-in-out infinite;text-align:center}
+.btn small{font:500 13px/1 var(--body);opacity:.85;letter-spacing:0}
+.btn:hover{background:#8B4CF7;transform:translateY(-2px)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible,button:focus-visible{outline:2px solid var(--accent2);outline-offset:3px}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 1px rgba(255,255,255,.08) inset,0 10px 36px var(--glow)}50%{box-shadow:0 0 0 1px rgba(255,255,255,.08) inset,0 10px 56px rgba(124,58,237,.7)}}
+.fine{font-size:14px;color:var(--dim)}
+
+/* HERO */
+.hero{padding-block:28px 64px;position:relative}
+.hero::before{content:"";position:absolute;inset:-120px 0 auto;height:720px;background:radial-gradient(60% 55% at 72% 30%,rgba(124,58,237,.30),transparent 70%);pointer-events:none}
+.brandbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:44px;position:relative}
+.wordmark{font:800 22px/1 var(--display);letter-spacing:-.02em;text-decoration:none}
+.wordmark span{color:var(--accent2)}
+.by{font-size:14px;color:var(--muted)}
+.hero__grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero__txt{display:grid;gap:24px}
+.tools{display:flex;flex-wrap:wrap;gap:8px}
+.tools span{font:600 13px/1 var(--body);padding:9px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--muted)}
+.tools b{color:var(--fg);font-weight:700}
+.not{font-weight:600;color:var(--fg)}
+.price-row{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
+.price b{font:800 42px/1 var(--display);letter-spacing:-.02em;display:block}
+.price small{color:var(--muted);font-size:14px}
+.phone{position:relative;width:100%;max-width:330px;margin:0 auto;aspect-ratio:9/16;border-radius:34px;overflow:hidden;border:1px solid var(--line);background:#000;box-shadow:0 40px 100px -30px rgba(124,58,237,.7),0 0 0 8px rgba(255,255,255,.03)}
+.phone video{width:100%;height:100%;object-fit:cover}
+.phone__sound{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);font:600 14px/1 var(--body);background:rgba(124,58,237,.92);border:0;color:#fff;border-radius:999px;padding:12px 18px;cursor:pointer;white-space:nowrap;box-shadow:0 8px 30px rgba(0,0,0,.4)}
+.phone__tag{position:absolute;top:14px;left:14px;font:700 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;background:rgba(7,5,15,.75);border:1px solid var(--line);padding:8px 10px;border-radius:8px}
+
+/* MODES */
+.modes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+.mode .ico{width:52px;height:52px;border-radius:14px;background:rgba(124,58,237,.16);border:1px solid rgba(167,139,250,.3);display:grid;place-items:center;font-size:24px;margin-bottom:18px}
+.mode h3{margin-bottom:8px}
+.mode p{color:var(--muted);font-size:15.5px}
+.ask{margin-top:18px;font:500 14px/1.45 var(--body);background:var(--bg2);border:1px solid var(--line);border-radius:14px 14px 14px 4px;padding:12px 14px;color:var(--fg)}
+.ask::before{content:"você pede";display:block;font:700 10px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);margin-bottom:7px}
+
+/* PROBLEM */
+.problem{background:var(--bg2);border-block:1px solid var(--line)}
+.pains{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.pains li{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border-radius:14px;background:var(--card);border:1px solid var(--line);color:var(--muted)}
+.pains li::before{content:"✕";color:var(--no);font-weight:700;flex-shrink:0}
+.pains strong{color:var(--fg);font-weight:600}
+.verdict{margin-top:26px;font:700 clamp(20px,3vw,26px)/1.3 var(--display);letter-spacing:-.01em}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+.step{position:relative;padding-top:58px}
+.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);position:absolute;top:22px;left:26px;font:800 15px/1 var(--display);color:var(--accent2)}
+.step h3{margin-bottom:8px;font-size:22px}
+.step p{color:var(--muted);font-size:15.5px}
+.chat{margin-top:16px;display:grid;gap:8px}
+.chat span{justify-self:end;max-width:92%;background:var(--accent);color:#fff;font-size:14px;line-height:1.45;padding:10px 13px;border-radius:14px 14px 4px 14px}
+
+/* FEATURES */
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.feat b{display:block;font:700 17px/1.25 var(--display);margin:12px 0 6px}
+.feat p{color:var(--muted);font-size:14.5px}
+.feat i{font-style:normal;font-size:22px}
+
+/* AI */
+.ai{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ai .card h3{font-size:24px;margin-bottom:6px}
+.ai .card p{color:var(--muted)}
+.ai .card small{display:block;margin-top:14px;color:var(--dim);font-size:13.5px}
+
+/* OFFER */
+.offer{background:radial-gradient(70% 60% at 50% 0%,rgba(124,58,237,.22),transparent 70%),var(--bg2);border-block:1px solid var(--line)}
+.box{max-width:620px;margin:0 auto;background:var(--card);border:1px solid rgba(167,139,250,.35);border-radius:26px;padding:34px;box-shadow:0 40px 120px -50px rgba(124,58,237,.8)}
+.box h3{font-size:26px;margin-bottom:18px}
+.gets{list-style:none;padding:0;margin:0 0 26px;display:grid;gap:12px}
+.gets li{display:flex;gap:12px;align-items:flex-start;color:var(--muted)}
+.gets li::before{content:"✓";color:var(--ok);font-weight:800;flex-shrink:0}
+.gets strong{color:var(--fg);font-weight:600}
+.compare{display:flex;justify-content:space-between;gap:16px;padding:16px 18px;border-radius:14px;background:var(--bg2);border:1px solid var(--line);margin-bottom:22px;font-size:15px;color:var(--muted)}
+.compare s{color:var(--dim);white-space:nowrap}
+.bigprice{text-align:center;margin-bottom:20px}
+.bigprice small{display:block;color:var(--muted);font-size:14px}
+.bigprice b{display:block;font:800 72px/1 var(--display);letter-spacing:-.03em;margin:6px 0}
+.box .btn{width:100%}
+.guar{display:flex;gap:16px;align-items:center;margin-top:24px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:14.5px}
+.guar b{flex-shrink:0;width:58px;height:58px;border-radius:50%;border:2px solid var(--accent2);display:grid;place-items:center;font:800 24px/1 var(--display);color:var(--fg)}
+
+/* FIT */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fit ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
+.fit li{display:flex;gap:10px;color:var(--muted)}
+.fit .yes li::before{content:"✓";color:var(--ok);font-weight:800}
+.fit .no li::before{content:"✕";color:var(--no);font-weight:800}
+
+/* FAQ */
+.faq{display:grid;gap:10px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0 20px}
+summary{cursor:pointer;list-style:none;padding:19px 0;font:700 17px/1.3 var(--display);display:flex;justify-content:space-between;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent2);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{color:var(--muted);padding-bottom:20px;font-size:15.5px}
+
+.final{text-align:center}
+.final .wrap{display:grid;gap:22px;justify-items:center}
+footer{padding:34px 0 110px;border-top:1px solid var(--line);color:var(--dim);font-size:14px;text-align:center}
+
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:30;display:none}
+.sticky .btn{width:100%;animation:none;padding:16px}
+
+@media (max-width:900px){
+  section{padding-block:64px}
+  .hero__grid{grid-template-columns:1fr;gap:40px}
+  .phone{max-width:300px}
+  .modes,.steps,.ai,.fit{grid-template-columns:1fr}
+  .feats{grid-template-columns:1fr 1fr}
+  .box{padding:26px 20px}
+  .sticky.on{display:block}
+}
+@media (max-width:520px){
+  .feats{grid-template-columns:1fr}
+  .price-row .btn{width:100%}
+  .bigprice b{font-size:62px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="brandbar">
+      <a class="wordmark" href="#">Edite <span>AI</span></a>
+      <span class="by">por AI Food Studio</span>
+    </div>
+    <div class="hero__grid">
+      <div class="hero__txt">
+        <div class="tools"><span><b>Claude</b> / Claude Code</span><span><b>ChatGPT</b> / Codex</span></div>
+        <h1>Grave no celular.<br>Peça em português.<br><span class="it">Poste editado.</span></h1>
+        <p class="lead">O Edite AI transforma o <strong>Claude ou o ChatGPT no seu editor de vídeo</strong>. Você manda o vídeo cru, escreve o que quer e recebe o Reels com cortes, legenda, animação e som. Pronto para postar.</p>
+        <p class="not">Sem CapCut, sem editor e sem passar a noite cortando vídeo.</p>
+        <div class="price-row">
+          <a class="btn js-buy" href="#oferta">Quero o Edite AI<small>R$ 47 · pagamento único</small></a>
+          <span class="fine">Mac e Windows · 7 dias de garantia</span>
+        </div>
+      </div>
+      <!-- TROCAR PELO VÍDEO DE VENDAS: substitua o src abaixo pelo novo vídeo gravado -->
+      <div class="phone">
+        <span class="phone__tag">Feito pelo Claude</span>
+        <video id="vsl" src="/comandos/assets/video-claude.mp4" poster="/comandos/assets/video-claude-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
+        <button class="phone__sound" id="snd" type="button">🔊 Toque para ouvir</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MODES -->
+<section>
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Três jeitos de usar</span>
+      <h2>Gravou ou não gravou, <span class="it">sai vídeo.</span></h2>
+      <p class="lead">O mesmo projeto edita o que você gravou e também cria vídeo do zero.</p>
+    </div>
+    <div class="modes">
+      <div class="card mode">
+        <div class="ico">🎬</div>
+        <h3>Edita o que você gravou</h3>
+        <p>Corta erros, pausas e frases repetidas. Coloca legenda no tempo da fala, efeitos e trilha.</p>
+        <div class="ask">edita o vídeo da pasta e coloca legenda nas frases fortes</div>
+      </div>
+      <div class="card mode">
+        <div class="ico">✍️</div>
+        <h3>Cria vídeo com texto animado</h3>
+        <p>Você grava só a voz e ele monta as cenas, com cada palavra entrando no exato momento em que você fala.</p>
+        <div class="ask">cria um vídeo de texto animado com esse áudio, nas cores da minha marca</div>
+      </div>
+      <div class="card mode">
+        <div class="ico">🎙️</div>
+        <h3>Vídeo sem aparecer</h3>
+        <p>Não quer gravar nada? Ele escreve o roteiro, gera a narração e cria o vídeo inteiro.</p>
+        <div class="ask">cria um anúncio de 30 segundos para a minha loja</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="wrap narrow">
+    <div class="head">
+      <span class="eyebrow">O problema</span>
+      <h2>Você grava em 3 minutos. <span class="it">E o vídeo morre na galeria.</span></h2>
+    </div>
+    <ul class="pains">
+      <li><span>Abre o editor e <strong>trava no primeiro corte</strong>.</span></li>
+      <li><span>Passa horas colocando <strong>legenda palavra por palavra</strong>, na mão.</span></li>
+      <li><span>Procura efeito, trilha e transição e o vídeo <strong>continua com cara de amador</strong>.</span></li>
+      <li><span>Um editor bom <strong>cobra por vídeo</strong>, e você precisa postar toda semana.</span></li>
+    </ul>
+    <p class="verdict">No fim, você posta menos do que deveria. E quem posta mais aparece mais.</p>
+  </div>
+</section>
+
+<!-- HOW -->
+<section>
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Três passos. <span class="it">O último é postar.</span></h2>
+    </div>
+    <div class="steps">
+      <div class="card step">
+        <h3>Grave</h3>
+        <p>Celular na vertical, você falando. Errou? Repete a frase e segue. Ele corta depois.</p>
+      </div>
+      <div class="card step">
+        <h3>Peça</h3>
+        <p>Coloque o vídeo na pasta do Edite AI e escreva o que quer, do seu jeito.</p>
+        <div class="chat"><span>corta as pausas, coloca legenda e um som de impacto no final</span></div>
+      </div>
+      <div class="card step">
+        <h3>Poste</h3>
+        <p>Ele devolve o MP4 vertical pronto. Não gostou de algo? Pede o ajuste em texto.</p>
+        <div class="chat"><span>deixa a legenda roxa e mais rápida</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">O que ele faz por você</span>
+      <h2>O trabalho de um editor, <span class="it">numa conversa.</span></h2>
+    </div>
+    <div class="feats">
+      <div class="feat"><i>✂️</i><b>Corta sozinho</b><p>Erros, silêncios e frases repetidas saem.</p></div>
+      <div class="feat"><i>💬</i><b>Legenda no tempo certo</b><p>Palavra por palavra, sincronizada com a sua fala.</p></div>
+      <div class="feat"><i>✨</i><b>Texto animado</b><p>Destaques, palavras riscadas, cursor e cartões na tela.</p></div>
+      <div class="feat"><i>🔊</i><b>Efeitos sonoros</b><p>Whoosh, pop e impacto na medida, abaixo da sua voz.</p></div>
+      <div class="feat"><i>🎨</i><b>Nas cores da marca</b><p>Fala as cores uma vez e ele aplica em tudo.</p></div>
+      <div class="feat"><i>🔁</i><b>Ajuste em texto</b><p>"Mais rápido", "troca a cor", "tira essa parte".</p></div>
+      <div class="feat"><i>🎯</i><b>Vários ganchos</b><p>Grave três aberturas e teste qual prende mais.</p></div>
+      <div class="feat"><i>📱</i><b>Pronto para Reels</b><p>Vertical 1080x1920, dentro da área segura.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AI -->
+<section class="problem">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Claude ou ChatGPT</span>
+      <h2>Funciona com a IA <span class="it">que você já usa.</span></h2>
+      <p class="lead">O Edite AI roda dentro do Claude Code ou do Codex, as versões do Claude e do ChatGPT que trabalham com arquivos no seu computador. As aulas mostram a instalação do zero.</p>
+    </div>
+    <div class="ai">
+      <div class="card"><h3>Claude</h3><p>Use com o Claude Code. Foi com o Claude que fizemos o vídeo desta página.</p><small>Precisa de uma assinatura paga do Claude.</small></div>
+      <div class="card"><h3>ChatGPT</h3><p>Use com o Codex, o agente do ChatGPT que trabalha com os seus arquivos.</p><small>Precisa de uma assinatura paga do ChatGPT.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <div class="head center">
+      <span class="eyebrow">A oferta</span>
+      <h2>Um editor cobra mais que isso <span class="it">por um vídeo.</span></h2>
+      <p class="lead">Com o Edite AI você paga uma vez e edita quantos vídeos gravar.</p>
+    </div>
+    <div class="box">
+      <h3>O que você recebe</h3>
+      <ul class="gets">
+        <li><span><strong>Projeto Edite AI completo</strong>, pronto para instalar no Mac ou no Windows</span></li>
+        <li><span><strong>Aulas em vídeo</strong> do zero até o seu primeiro Reels editado</span></li>
+        <li><span><strong>Pack de prompts de edição</strong> para copiar, colar e pedir do jeito certo</span></li>
+        <li><span><strong>Suporte no WhatsApp</strong> para tirar dúvidas</span></li>
+        <li><span><strong>Atualizações</strong> com novos estilos, sem pagar de novo</span></li>
+      </ul>
+      <div class="compare"><span>Editor de vídeo, por Reels</span><s>R$ 50 a R$ 150</s></div>
+      <div class="bigprice"><small>Edite AI, acesso completo</small><b>R$ 47</b><small>pagamento único, sem mensalidade</small></div>
+      <a class="btn js-buy" href="#">Quero editar meus vídeos com IA<small>acesso imediato no e-mail</small></a>
+      <div class="guar"><b>7</b><span><strong style="color:var(--fg)">7 dias de garantia.</strong> Instale, edite seus vídeos e, se não gostar, devolvemos o seu dinheiro.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FIT -->
+<section>
+  <div class="wrap">
+    <div class="fit">
+      <div class="card yes"><h3>É para você se</h3><ul>
+        <li>você cria conteúdo e não sabe ou não quer editar</li>
+        <li>tem um negócio e quer postar com frequência</li>
+        <li>já usa Claude ou ChatGPT, ou quer começar</li>
+        <li>cansou de depender de editor</li>
+      </ul></div>
+      <div class="card no"><h3>Não é para você se</h3><ul>
+        <li>quer ajustar cada quadro na mão, num editor</li>
+        <li>não quer assinar nenhuma IA</li>
+        <li>procura um curso longo de edição</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top:0">
+  <div class="wrap narrow">
+    <div class="head"><span class="eyebrow">Perguntas frequentes</span><h2>Antes de comprar</h2></div>
+    <div class="faq">
+      <details><summary>Preciso saber programar?</summary><p>Não. Você escreve o pedido em português, como se estivesse mandando mensagem para um editor. A IA cuida do resto.</p></details>
+      <details><summary>Preciso saber editar vídeo?</summary><p>Não. Os cortes, a legenda, as animações e os sons são feitos pela IA. Você só diz o que quer.</p></details>
+      <details><summary>Funciona com o ChatGPT ou só com o Claude?</summary><p>Funciona com os dois: no Claude pelo Claude Code e no ChatGPT pelo Codex. As aulas mostram a instalação de cada um.</p></details>
+      <details><summary>Preciso pagar alguma IA?</summary><p>Sim. Você precisa de uma assinatura paga do Claude ou do ChatGPT. O Edite AI é o projeto que transforma essa IA no seu editor.</p></details>
+      <details><summary>Funciona no meu computador?</summary><p>Funciona no Mac e no Windows. O vídeo é editado no seu computador, então quanto melhor a máquina, mais rápido ele fica pronto.</p></details>
+      <details><summary>Quantos vídeos posso editar?</summary><p>Quantos você gravar. Não tem limite e não tem mensalidade do Edite AI.</p></details>
+      <details><summary>Posso pedir ajustes no vídeo?</summary><p>Pode. É só escrever: "deixa mais rápido", "troca a cor da legenda", "tira os primeiros segundos". Ele refaz.</p></details>
+      <details><summary>É um curso?</summary><p>Não. É um projeto pronto para instalar e usar. As aulas são curtas e servem só para você instalar e editar o primeiro vídeo.</p></details>
+      <details><summary>Como recebo?</summary><p>O acesso chega no seu e-mail logo depois do pagamento.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Se não gostar, devolvemos o seu dinheiro.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final problem">
+  <div class="wrap">
+    <h2>O próximo vídeo que você gravar <span class="it">já pode sair editado.</span></h2>
+    <a class="btn js-buy" href="#">Quero o Edite AI<small>R$ 47 · pagamento único · 7 dias de garantia</small></a>
+  </div>
+</section>
+
+<footer>Edite AI · AI Food Studio</footer>
+
+<div class="sticky" id="sticky"><a class="btn js-buy" href="#">Quero o Edite AI · R$ 47</a></div>
+
+<script>
+/* TROCAR AQUI pelo link de checkout da Kiwify */
+var CHECKOUT_URL = "#oferta";
+document.querySelectorAll('.js-buy').forEach(function(a){
+  a.href = CHECKOUT_URL;
+  a.addEventListener('click',function(){ if(window.fbq && CHECKOUT_URL.indexOf('http')===0) fbq('track','InitiateCheckout',{value:47,currency:'BRL',content_name:'Edite AI'}); });
+});
+(function(){
+  var v=document.getElementById('vsl'),b=document.getElementById('snd');
+  b.addEventListener('click',function(){ v.muted=!v.muted; if(!v.muted){v.currentTime=0;v.play();b.textContent='🔇 Silenciar';}else{b.textContent='🔊 Toque para ouvir';} });
+  var s=document.getElementById('sticky'),o=document.getElementById('oferta');
+  window.addEventListener('scroll',function(){ var r=o.getBoundingClientRect(); s.classList.toggle('on', window.scrollY>700 && (r.top>window.innerHeight||r.bottom<0)); },{passive:true});
+})();
+</script>
+</body>
+</html>
