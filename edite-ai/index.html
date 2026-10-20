@@ -400,7 +400,7 @@ footer{padding:34px 0 110px;border-top:1px solid var(--line);color:var(--dim);fo
 
 <script>
 /* TROCAR AQUI pelo link de checkout da Kiwify */
-var CHECKOUT_URL = "#oferta";
+var CHECKOUT_URL = "https://kiwify.app/3uDoNsD";
 document.querySelectorAll('.js-buy').forEach(function(a){
   a.href = CHECKOUT_URL;
   a.addEventListener('click',function(){ if(window.fbq && CHECKOUT_URL.indexOf('http')===0) fbq('track','InitiateCheckout',{value:47,currency:'BRL',content_name:'Edite AI'}); });
