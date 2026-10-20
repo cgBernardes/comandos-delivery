@@ -1,7 +1,9 @@
 {
   "rewrites": [
     { "source": "/comandos", "destination": "/index.html" },
+    { "source": "/comandos/video-escrito-pelo-claude", "destination": "/blog/video-escrito-pelo-claude/index.html" },
     { "source": "/comandos/:path*", "destination": "/:path*" },
-    { "source": "/blog/:slug", "destination": "/blog/:slug/index.html" }
+    { "source": "/blog/:slug", "destination": "/blog/:slug/index.html" },
+    { "source": "/video-escrito-pelo-claude", "destination": "/blog/video-escrito-pelo-claude/index.html" }
   ]
 }
