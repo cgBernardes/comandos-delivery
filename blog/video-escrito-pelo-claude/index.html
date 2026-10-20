@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O prompt do vídeo escrito pelo Claude | AI Food Studio</title>
+  <meta name="description" content="Esse Reels não foi editado: o Claude escreveu cada cena em código. Copie o prompt e crie um vídeo de tipografia animada para o seu nicho.">
+  <meta name="theme-color" content="#0D0719">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Esse vídeo foi escrito pelo Claude. Pegue o prompt.">
+  <meta property="og:description" content="Copie o prompt e crie um Reels de tipografia animada para o seu negócio, sem programa de edição.">
+  <meta property="og:image" content="https://www.aifoodstudio.com.br/comandos/assets/video-claude-poster.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="/comandos/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1784785552529873');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1784785552529873&ev=PageView&noscript=1"/></noscript>
+<!-- Fim Meta Pixel -->
+<style>
+:root{
+  --void:#0D0719;--deep:#130B24;--card:#1A0F30;--card-2:#230D3A;
+  --line:rgba(255,255,255,.11);--line-2:rgba(255,255,255,.18);
+  --txt:#F1EDFF;--txt-2:#B5A9D6;--txt-3:#8477A8;
+  --brand:#7C3AED;--brand-2:#A78BFA;--sky-2:#C77DFF;--cyan:#E0AAFF;
+  --gold:#E3B45C;--gold-2:#F3D89A;--gold-ink:#2A1D05;
+  --grad:linear-gradient(96deg,var(--sky-2),var(--cyan));
+  --grad-gold:linear-gradient(96deg,var(--gold),var(--gold-2));
+  --font:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:'JetBrains Mono','DejaVu Sans Mono',ui-monospace,Menlo,Consolas,monospace;
+  --serif:'Instrument Serif',Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);font-weight:300;font-size:17px;line-height:1.65;color:var(--txt);background-color:var(--void);
+  background-image:radial-gradient(900px 420px at 50% -80px,rgba(124,58,237,.30),transparent 70%),linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:auto,44px 44px,44px 44px;background-repeat:no-repeat,repeat,repeat;overflow-x:hidden}
+h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:0}
+p{margin:0}a{color:inherit}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 16px}
+.narrow{max-width:760px}
+:focus-visible{outline:2px solid var(--gold-2);outline-offset:3px;border-radius:6px}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(13,7,25,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar__in{display:flex;align-items:center;justify-content:space-between;min-height:58px}
+.wordmark{font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--sky-2);text-decoration:none;font-size:13px}
+.tag{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--sky-2);margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--font);font-weight:700;font-size:16px;line-height:1.2;text-decoration:none;cursor:pointer;padding:17px 30px;border-radius:12px;border:1px solid transparent;transition:transform .18s,box-shadow .18s,background .18s,border-color .18s}
+.btn--gold{background:var(--grad-gold);color:var(--gold-ink)}
+.btn--gold:hover{transform:translateY(-2px);box-shadow:0 10px 30px -8px rgba(227,180,92,.55)}
+.btn--ghost{background:transparent;border-color:var(--line-2);color:var(--txt)}
+.btn--ghost:hover{transform:translateY(-2px);border-color:var(--sky-2)}
+.btn--sm{padding:10px 18px;font-size:14px;border-radius:10px}
+
+.hero{padding:56px 0 40px}
+.hero__grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+h1{font-size:clamp(42px,8.4vw,72px);margin-bottom:22px;text-transform:uppercase}
+h1 span{display:block}
+h1 .b{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.lead{font-size:clamp(17px,2.4vw,19px);color:var(--txt-2);margin-bottom:28px;max-width:560px}
+.lead strong{color:var(--txt);font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.meta span{font-family:var(--mono);font-size:12.5px;color:var(--sky-2);background:rgba(199,125,255,.08);border:1px solid rgba(199,125,255,.28);border-radius:8px;padding:7px 11px}
+.phone{position:relative;width:100%;max-width:340px;margin:0 auto;aspect-ratio:9/16;border-radius:34px;overflow:hidden;border:1px solid var(--line-2);background:#000;box-shadow:0 40px 90px -30px rgba(124,58,237,.65),0 0 0 8px rgba(255,255,255,.03)}
+.phone video{width:100%;height:100%;object-fit:cover;display:block}
+.phone__sound{position:absolute;right:12px;bottom:12px;font-family:var(--mono);font-size:12px;background:rgba(13,7,25,.8);border:1px solid var(--line-2);color:var(--txt);border-radius:999px;padding:8px 12px;cursor:pointer}
+
+.section{padding:64px 0}
+.section--deep{background:var(--deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.h2{font-size:clamp(28px,5vw,42px);margin-bottom:16px}
+.h2 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--cyan)}
+.sub{color:var(--txt-2);margin-bottom:28px}
+.sub strong{color:var(--txt);font-weight:600}
+
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+.how div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.how b{display:block;font-family:var(--mono);font-size:13px;color:var(--sky-2);margin-bottom:10px}
+.how p{color:var(--txt-2);font-size:15.5px}
+.how strong{color:var(--txt);font-weight:600}
+
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:12px;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;color:var(--txt-2)}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-weight:700;color:var(--gold-2);font-size:14px;padding-top:3px}
+.steps strong{color:var(--txt);font-weight:600}
+
+.prompt{border:1px solid rgba(199,125,255,.32);border-radius:18px;background:#0a0514;overflow:hidden;box-shadow:0 30px 80px -40px rgba(124,58,237,.7)}
+.prompt__bar .btn{white-space:nowrap}
+.prompt__bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px 12px 18px;border-bottom:1px solid var(--line);background:rgba(124,58,237,.10)}
+.prompt__name{font-family:var(--mono);font-size:13px;color:var(--sky-2);display:flex;align-items:center;gap:10px}
+.prompt__name i{width:10px;height:10px;border-radius:50%;background:var(--brand-2);display:inline-block}
+.prompt pre{margin:0;padding:22px 22px 26px;font-family:var(--mono);font-size:13.5px;line-height:1.7;color:#E6E0FA;white-space:pre-wrap;word-break:break-word;max-height:560px;overflow:auto}
+.prompt pre .ph{color:var(--gold-2);background:rgba(227,180,92,.10);border-radius:4px;padding:0 3px}
+.prompt pre .hd{color:var(--sky-2);font-weight:700}
+.copied{background:#34d399!important;color:#052e1c!important}
+
+.niches{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.niche{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+.niche h3{font-size:18px;letter-spacing:-.01em;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.niche p{color:var(--txt-2);font-size:15px}
+
+.offer{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:30px;border-radius:20px;border:1px solid rgba(227,180,92,.4);background:rgba(227,180,92,.08)}
+.offer h3{font-size:clamp(22px,3.6vw,30px);margin-bottom:8px}
+.offer p{color:var(--txt-2)}
+.offer p strong{color:var(--gold-2);font-weight:700}
+.offer .btn{white-space:nowrap;flex-shrink:0}
+.foot{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;padding:34px 0 60px;color:var(--txt-3);font-size:14px}
+.note{font-size:14px;color:var(--txt-3);margin-top:14px}
+
+@media (max-width:860px){
+  .hero__grid{grid-template-columns:1fr;gap:36px}
+  .phone{max-width:300px}
+  .how{grid-template-columns:1fr}
+  .niches{grid-template-columns:1fr}
+  .offer{flex-direction:column;align-items:flex-start;padding:24px}
+  .offer .btn{width:100%}
+  .section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__in">
+      <a class="wordmark" href="/comandos">/AI FOOD STUDIO</a>
+      <a class="btn btn--ghost btn--sm" href="#prompt">Copiar o prompt</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div>
+          <div class="tag">Prompt grátis / AI Food Studio</div>
+          <h1><span>Esse vídeo</span><span class="b">foi escrito.</span></h1>
+          <p class="lead">O Reels que você viu não passou por nenhum programa de edição. <strong>O Claude Opus 5.5 escreveu cada cena em código</strong>, sincronizou com a minha voz e juntou tudo num vídeo. Aqui está o prompt para você fazer o mesmo no seu nicho.</p>
+          <div class="meta"><span>tipografia animada</span><span>1080x1920</span><span>qualquer nicho</span></div>
+          <a class="btn btn--gold" href="#prompt">Quero o prompt ↓</a>
+        </div>
+        <div class="phone">
+          <video id="vid" src="/comandos/assets/video-claude.mp4" poster="/comandos/assets/video-claude-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
+          <button class="phone__sound" id="snd" type="button">🔇 ativar som</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--deep">
+      <div class="wrap narrow">
+        <div class="tag">Como o vídeo foi feito</div>
+        <h2 class="h2">Sem timeline. <em>Só conversa.</em></h2>
+        <p class="sub">Em vez de arrastar camadas num editor, a IA escreve a página das animações, quadro por quadro, e transforma isso em vídeo. Se não gostou de alguma coisa, é só pedir.</p>
+        <div class="how">
+          <div><b>01 / roteiro</b><p>A IA escreve a narração com gancho, virada para o seu nicho e CTA. <strong>Você grava no celular.</strong></p></div>
+          <div><b>02 / cenas</b><p>Ela cria cada cena em HTML: palavras entrando no tempo da fala, destaques, cursor, cartões e efeitos.</p></div>
+          <div><b>03 / vídeo</b><p>Os quadros viram um MP4 vertical com a sua voz. <strong>Ajustes são pedidos em texto.</strong></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap narrow">
+        <div class="tag">Como usar</div>
+        <h2 class="h2">Do prompt ao <em>Reels</em></h2>
+        <p class="sub">O prompt foi pensado para o <strong>Claude</strong>. No <strong>Claude Code</strong>, ele entrega o MP4 pronto. No app do Claude, ele entrega a animação para você gravar a tela.</p>
+        <ol class="steps">
+          <li><span><strong>Abra o Claude</strong> (ou o Claude Code, se quiser o MP4 direto) e cole o prompt abaixo.</span></li>
+          <li><span><strong>Preencha os campos em amarelo</strong> com o seu nicho, marca, cores e a palavra do CTA.</span></li>
+          <li><span><strong>Aprove o roteiro e grave a narração</strong> no celular, com uma pausa curta entre os blocos.</span></li>
+          <li><span><strong>Envie o áudio</strong> e peça os ajustes até ficar do seu jeito: cor, ritmo, sincronia e sons.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--deep" id="prompt">
+      <div class="wrap narrow">
+        <div class="tag">O prompt</div>
+        <h2 class="h2">Copie, cole e <em>adapte</em></h2>
+        <p class="sub">Troque só o que está em amarelo. O resto já está pronto.</p>
+        <div class="prompt">
+          <div class="prompt__bar">
+            <span class="prompt__name"><i></i>prompt-video-escrito-por-ia</span>
+            <button class="btn btn--gold btn--sm" id="copy" type="button">Copiar prompt</button>
+          </div>
+<pre id="ptext"><span class="hd">Você é meu diretor de motion design.</span> Vamos criar juntos um vídeo vertical para Reels (1080x1920) no estilo tipografia animada: as palavras da narração aparecem na tela no exato momento em que eu falo, com cenas animadas que ilustram o que estou dizendo. Você vai construir o vídeo inteiro com código (HTML, CSS e JavaScript), cena por cena, sem programa de edição.
+
+<span class="hd">SOBRE O MEU NEGÓCIO</span>
+Nicho: <span class="ph">[ex.: loja de roupa, clínica, hamburgueria, salão]</span>
+Nome da marca: <span class="ph">[nome]</span>
+Público: <span class="ph">[quem eu quero atingir]</span>
+Cores da marca: <span class="ph">[ex.: roxo #7C3AED e preto]</span> (se eu não souber, sugira uma paleta)
+Palavra do CTA: <span class="ph">[ex.: COMANDOS]</span>
+
+<span class="hd">ETAPA 1. ROTEIRO</span> (faça só isso primeiro e espere minha aprovação)
+Escreva uma narração de 45 a 60 segundos nesta estrutura:
+1. Gancho de curiosidade nos 3 primeiros segundos. Ex.: "Esse vídeo não foi editado. Ele foi escrito."
+2. Revelação: quem fez o vídeo e como (uma IA escrevendo código, cena por cena).
+3. Um momento curto que brinca com o próprio vídeo e faz a pessoa reler a tela.
+4. Virada para o meu nicho: o que essa mesma IA pode fazer pelo negócio de quem assiste, com 3 exemplos concretos do meu nicho.
+5. Prova de facilidade: mudar cor, deixar mais chamativo ou fazer algo piscar só pedindo.
+6. CTA: "Comenta <span class="ph">[PALAVRA]</span> que eu te mando..."
+Use frases curtas, linguagem falada e nenhum termo técnico. Divida em blocos numerados para eu gravar.
+
+<span class="hd">ETAPA 2. SINCRONIA</span>
+Quando eu enviar o áudio gravado, descubra em que segundo cada palavra é falada. Se você não conseguir ouvir o áudio, me peça os segundos de 1 ou 2 palavras de cada bloco e use como âncora. Depois monte uma tabela: tempo, fala, texto na tela e animação.
+
+<span class="hd">ETAPA 3. CENAS</span>
+Crie o vídeo em uma única página HTML com:
+• tela de 1080x1920, fundo escuro com um brilho suave na cor da marca;
+• palavras entrando uma a uma no momento em que são faladas (aparecer, subir de leve e sair do desfoque);
+• uma cena para cada ideia, com transição rápida entre elas;
+• palavras importantes destacadas na cor da marca;
+• elementos que ilustram a fala: palavras riscadas, cursor clicando, barra de progresso, editor de código digitando, cartões com exemplos do meu nicho e caixa de comentário com a palavra do CTA;
+• uma fonte forte sem serifa para os títulos e uma serifada itálica para destaques (Google Fonts);
+• toda a animação controlada por uma função render(tempo) que desenha o quadro exato daquele segundo, para exportar quadro a quadro;
+• textos dentro da área segura do Reels (evite os 350px de baixo e a lateral direita).
+Antes de exportar, me mostre capturas de algumas cenas para eu aprovar.
+
+<span class="hd">ETAPA 4. EXPORTAÇÃO</span>
+Se você tiver acesso a terminal: renderize os quadros a 30 fps (Playwright ou Puppeteer), junte com ffmpeg, coloque o meu áudio e me entregue um MP4 1080x1920.
+Se não tiver: me entregue a página com um botão de play que roda a animação em tempo real, para eu gravar a tela.
+
+<span class="hd">ETAPA 5. SONS</span> (opcional)
+Adicione efeitos discretos: whoosh nas trocas de cena, pop quando um cartão aparece, digitação no código e impacto na palavra do CTA. Sempre abaixo do volume da voz.
+
+<span class="hd">REGRAS</span>
+• Não invente informações sobre o meu negócio. Se faltar algo, pergunte.
+• Nada parado por muito tempo: algo deve se mexer a cada 1 ou 2 segundos.
+• Se eu disser que um trecho está fora de sincronia, ajuste só aquele trecho.
+
+Comece pela Etapa 1.</pre>
+        </div>
+        <p class="note">Dica: se o texto ficar atrasado ou adiantado em algum trecho, diga para a IA o segundo exato em que você fala uma palavra daquele trecho. Ela usa isso como âncora e acerta o resto.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap narrow">
+        <div class="tag">Ideias por nicho</div>
+        <h2 class="h2">O mesmo vídeo, <em>no seu negócio</em></h2>
+        <p class="sub">Na parte 4 do roteiro, troque os exemplos pelos do seu nicho:</p>
+        <div class="niches">
+          <div class="niche"><h3>🍔 Delivery</h3><p>A foto do lanche com cara de estúdio, o cardápio do iFood e o post da promoção de sexta.</p></div>
+          <div class="niche"><h3>👗 Loja de roupa</h3><p>A foto do look sem fotógrafo, o anúncio da coleção nova e o post da liquidação.</p></div>
+          <div class="niche"><h3>🩺 Clínica</h3><p>O post explicando um procedimento, o anúncio da avaliação e o story de agenda aberta.</p></div>
+          <div class="niche"><h3>💇‍♀️ Salão</h3><p>O antes e depois do cliente, a arte do pacote de noivas e o post de horários livres.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap narrow">
+        <div class="offer">
+          <div>
+            <h3>Tem delivery?</h3>
+            <p>No <strong>DELIVERY 10K</strong> são <strong>10.000 comandos</strong> prontos para fotos, artes e promoções. <strong>R$ 27,90</strong>, pagamento único.</p>
+          </div>
+          <a class="btn btn--gold" href="/delivery">Quero os 10.000 comandos</a>
+        </div>
+        <div class="foot">
+          <a class="btn btn--ghost btn--sm" href="/comandos">← Ver os 100 comandos grátis</a>
+          <a class="btn btn--ghost btn--sm" id="wa" href="#" target="_blank" rel="noopener">Compartilhar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<script>
+(function(){
+  var btn=document.getElementById('copy'),pre=document.getElementById('ptext');
+  btn.addEventListener('click',function(){
+    var txt=pre.innerText;
+    function done(){btn.textContent='Copiado ✓';btn.classList.add('copied');if(window.fbq)fbq('trackCustom','CopiouPrompt',{pagina:'video-escrito-pelo-claude'});setTimeout(function(){btn.textContent='Copiar prompt';btn.classList.remove('copied')},2200)}
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(done,fallback)}else fallback();
+    function fallback(){var t=document.createElement('textarea');t.value=txt;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{document.execCommand('copy');done()}catch(e){}document.body.removeChild(t)}
+  });
+  var v=document.getElementById('vid'),s=document.getElementById('snd');
+  s.addEventListener('click',function(){v.muted=!v.muted;if(!v.muted){v.currentTime=0;v.play()}s.textContent=v.muted?'🔇 ativar som':'🔊 som ligado'});
+  document.getElementById('wa').href='https://wa.me/?text='+encodeURIComponent('Olha esse prompt para criar vídeo com IA: '+location.href.split('#')[0]);
+})();
+</script>
+</body>
+</html>

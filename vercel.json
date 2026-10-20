@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/comandos", "destination": "/index.html" },
-    { "source": "/comandos/:path*", "destination": "/:path*" }
+    { "source": "/comandos/:path*", "destination": "/:path*" },
+    { "source": "/blog/:slug", "destination": "/blog/:slug/index.html" }
   ]
 }
